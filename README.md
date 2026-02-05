@@ -33,16 +33,21 @@ The application is deployed on AWS Elastic Beanstalk and uses Gunicorn as the WS
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-## Project Structure
-├── application.py # Flask application entry point
-├── Procfile # Gunicorn startup configuration
-├── requirements.txt # Project dependencies
-├── model/ # Trained ML model files
-├── src/ # Data processing and prediction logic
-├── templates/ # HTML templates
-├── static/ # CSS and JS files
-└── README.md
+## Dataset Overview
+The dataset consists of student academic and demographic records. Each row represents one student, and each column represents a specific attribute.
 
+Target Variable:
+- `math_score`: Student’s score in the mathematics exam (0–100). This is the dependent feature.
+
+Independent Variables:
+- `gender`: Gender of the student (male, female).
+- `race_ethnicity`: Ethnicity group of the student (Group A, B, C, D, E).
+- `parental_level_of_education`: Highest education level of the student’s parent(s).
+- `lunch`: Type of lunch program (standard or free/reduced).
+- `test_preparation_course`: Whether the student completed a test preparation course (completed or none).
+- `reading_score`: Student’s score in the reading exam (0–100).
+- `writing_score`: Student’s score in the writing exam (0–100).
+- 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Deployment Notes
